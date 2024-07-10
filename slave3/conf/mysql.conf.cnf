@@ -1,0 +1,8 @@
+[mysqld]
+
+skip-name-resolve
+default_authentication_plugin = mysql_native_password
+
+server-id = 6
+log_bin = 2.2
+binlog_do_db = db3
