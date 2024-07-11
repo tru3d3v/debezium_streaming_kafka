@@ -1,0 +1,16 @@
+{
+    "name": "mongo-customerdata",
+    "config": {
+    "connector.class": "com.mongodb.kafka.connect.MongoSinkConnector",
+    "connection.uri": "mongodb://user:pass@mongodb-community:27017/?authSource=admin",
+    "topics": "CustomerData,LogEvent",
+    "tasks.max": "1",
+    "database": "tugasakhir",
+    "key.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "key.converter.schemas.enable": "false",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "value.converter.schemas.enable": "false"
+   
+   
+    }
+}
